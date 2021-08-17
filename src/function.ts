@@ -27,3 +27,10 @@ const myFunc4 = (a: string, b: string, c: string = 'welcome') => {
 
 myFunc4('Shonjoy', 'Das');
 myFunc4('Shonjoy', 'Das', 'Programmer');
+
+// ! specific function type
+const myFunc5 = (a: number, b: number): number => {
+  return a + b;
+};
+
+console.log(myFunc5(3, 7));

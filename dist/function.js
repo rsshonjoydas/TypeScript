@@ -23,3 +23,8 @@ var myFunc4 = function (a, b, c) {
 };
 myFunc4('Shonjoy', 'Das');
 myFunc4('Shonjoy', 'Das', 'Programmer');
+// ! specific function type
+var myFunc5 = function (a, b) {
+    return a + b;
+};
+console.log(myFunc5(3, 7));
