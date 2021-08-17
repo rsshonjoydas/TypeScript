@@ -10,3 +10,11 @@ const myFunc2 = (a: string, b: string) => {
 };
 
 myFunc2('Shonjoy', 'Das');
+
+// ! optional function type
+const myFunc3 = (a: string, b: string, c?: string) => {
+  console.log(c);
+  console.log(`hello ${a} ${b}`);
+};
+
+myFunc3('Shonjoy', 'Das');
