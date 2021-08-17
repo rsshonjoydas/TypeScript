@@ -18,3 +18,12 @@ const myFunc3 = (a: string, b: string, c?: string) => {
 };
 
 myFunc3('Shonjoy', 'Das');
+
+// ! default function type
+const myFunc4 = (a: string, b: string, c: string = 'welcome') => {
+  console.log(c);
+  console.log(`hello ${a} ${b}`);
+};
+
+myFunc4('Shonjoy', 'Das');
+myFunc4('Shonjoy', 'Das', 'Programmer');

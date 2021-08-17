@@ -15,3 +15,11 @@ var myFunc3 = function (a, b, c) {
     console.log("hello " + a + " " + b);
 };
 myFunc3('Shonjoy', 'Das');
+// ! default function type
+var myFunc4 = function (a, b, c) {
+    if (c === void 0) { c = 'welcome'; }
+    console.log(c);
+    console.log("hello " + a + " " + b);
+};
+myFunc4('Shonjoy', 'Das');
+myFunc4('Shonjoy', 'Das', 'Programmer');
