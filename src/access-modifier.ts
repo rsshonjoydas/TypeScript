@@ -29,3 +29,31 @@ console.log(rsshonjoy.age);
 //? readonly - don't modify but access
 // rsshonjoy.country = "USA"
 console.log(rsshonjoy.country);
+
+//! access modifier shortcut
+class Coders {
+  constructor(
+    private name: string,
+    public age: number,
+    readonly country: string
+  ) {}
+
+  coding() {
+    console.log(`${this.name} from ${this.country} is Programmer!`);
+  }
+}
+
+const joy = new Coders('Joy', 21, 'USA');
+console.log(joy);
+
+//? private - don't modify & access anywhere
+// joy.name = "Joy"
+// console.log(joy.name);
+
+//? public - do access & modify
+joy.age = 22;
+console.log(joy.age);
+
+//? readonly - don't modify but access
+// joy.country = "Bangladesh"
+console.log(joy.country);
