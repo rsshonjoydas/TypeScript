@@ -1,17 +1,16 @@
 "use strict";
 //! access modifier
-var Coder = /** @class */ (function () {
-    function Coder(n, a, c) {
+class Coder {
+    constructor(n, a, c) {
         this.name = n;
         this.age = a;
         this.country = c;
     }
-    Coder.prototype.coding = function () {
-        console.log(this.name + " from " + this.country + " is Programmer!");
-    };
-    return Coder;
-}());
-var rsshonjoy = new Coder('Shonjoy', 21, 'Bangladesh');
+    coding() {
+        console.log(`${this.name} from ${this.country} is Programmer!`);
+    }
+}
+const rsshonjoy = new Coder('Shonjoy', 21, 'Bangladesh');
 console.log(rsshonjoy);
 //? private - don't modify & access anywhere
 // rsshonjoy.name = "Joy"
@@ -23,18 +22,17 @@ console.log(rsshonjoy.age);
 // rsshonjoy.country = "USA"
 console.log(rsshonjoy.country);
 //! access modifier shortcut
-var Coders = /** @class */ (function () {
-    function Coders(name, age, country) {
+class Coders {
+    constructor(name, age, country) {
         this.name = name;
         this.age = age;
         this.country = country;
     }
-    Coders.prototype.coding = function () {
-        console.log(this.name + " from " + this.country + " is Programmer!");
-    };
-    return Coders;
-}());
-var joy = new Coders('Joy', 21, 'USA');
+    coding() {
+        console.log(`${this.name} from ${this.country} is Programmer!`);
+    }
+}
+const joy = new Coders('Joy', 21, 'USA');
 console.log(joy);
 //? private - don't modify & access anywhere
 // joy.name = "Joy"

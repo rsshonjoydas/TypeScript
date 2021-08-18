@@ -1,13 +1,13 @@
 "use strict";
 // ! function signatures
-var add;
-add = function (a, b) {
+let add;
+add = (a, b) => {
     return a + b;
 };
 console.log(add(3, 7));
 // ! function signatures with if else
-var calculation;
-calculation = function (a, b, c) {
+let calculation;
+calculation = (a, b, c) => {
     if (c === 'add') {
         return a + b;
     }
@@ -18,11 +18,11 @@ calculation = function (a, b, c) {
 console.log(calculation(3, 7, 'add'));
 console.log(calculation(3, 7, 'minus'));
 // ! function signatures with object
-var userDetail;
-userDetail = function (id, user) {
-    return "User id is " + id + ", name is " + user.name + " and age is " + user.age;
+let userDetail;
+userDetail = (id, user) => {
+    return `User id is ${id}, name is ${user.name} and age is ${user.age}`;
 };
-var userShonjoy = userDetail(37, {
+const userShonjoy = userDetail(37, {
     name: 'Shonjoy',
     age: 21,
 });

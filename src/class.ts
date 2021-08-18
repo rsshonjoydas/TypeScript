@@ -1,4 +1,4 @@
-class Programmer {
+export class Programmer {
   name: string;
   age: number;
   country: string;

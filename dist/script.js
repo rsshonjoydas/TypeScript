@@ -6,11 +6,11 @@ function multiply(a, b) {
 }
 console.log(multiply(3, 7));
 // ! ARRAY
-var fruits = ['apple', 'banana', 'orange'];
+let fruits = ['apple', 'banana', 'orange'];
 fruits.push('strawberry');
 console.log(fruits);
 // ! OBJECT
-var person = {
+let person = {
     name: 'Shonjoy',
     age: 21,
     isProgramming: true,

@@ -1,12 +1,12 @@
 "use strict";
 // ! normal variable
-var a;
+let a;
 a = 'Shonjoy';
 // ! array
-var b = [];
+let b = [];
 b.push('Shonjoy', 37);
 // ! object
-var c;
+let c;
 c = {
     name: 'Shonjoy',
     age: 21,
