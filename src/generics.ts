@@ -18,3 +18,21 @@ let user = addID({
 
 const addUserID = addID(user);
 console.log(addUserID);
+
+// ! generic with interface
+interface APIResponse<T> {
+  status: number;
+  type: string;
+  data: T;
+}
+
+const response: APIResponse<object> = {
+  status: 200,
+  type: 'good',
+  data: {
+    name: 'Shonjoy',
+    something: 300,
+  },
+};
+
+console.log(response);

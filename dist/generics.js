@@ -10,3 +10,12 @@ let user = addID({
 });
 const addUserID = addID(user);
 console.log(addUserID);
+const response = {
+    status: 200,
+    type: 'good',
+    data: {
+        name: 'Shonjoy',
+        something: 300,
+    },
+};
+console.log(response);
