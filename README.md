@@ -11,7 +11,7 @@
 
 - [What is TypeScript](#what-is-typeScript)
 - [Dynamic vs Static Typing](#dynamic-vs-static-typing)
-- [What is Wrong with JavaScript](#what's-wrong-with-javaScrip)
+- [What is Wrong with JavaScript](#what-is-wrong-with-javaScrip)
 - [Benefits of TypeScript](#benefits-of-typeScript)
 - [Compiling TypeScript](#compiling-typeScript)
 - [Requirement](#requirement)
