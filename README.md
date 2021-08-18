@@ -10,17 +10,30 @@
 ## Agenda
 
 - [What is TypeScript](#what-is-typeScript)
+- [Dynamic vs Static Typing](#dynamic-vs-static-typing)
 - [What is Wrong with JavaScript](#what's-wrong-with-javaScrip)
 - [Benefits of TypeScript](#benefits-of-typeScript)
+- [Compiling TypeScript](#compiling-typeScript)
 - [Requirement](#requirement)
 
 ### What is TypeScript
 
+TypeScrip is an open source language and is a superset of JavaScript.
+
 - Superset of JavaScript created by Microsoft
-- Allows static strict typing
+- Offers additional features to JavaScript including static strict typing
+- Using types is completely optional
+- Compiles down to regular JS
+- Can be used for front-end JS as well as backend with Node.js
+- Supports modern features from ES6, ES7 (arrow functions, let, const, etc)
 - Extra features: interfaces, enums, tuples, generics
-- Supports modern features (arrow functions, let, const)
+- Types from 3rd party libraries can be added with type definitions
 - Based on the .NET harmony specification
+
+### Dynamic vs Static Typing
+
+- In dynamically typed languages, the types are associated with run-time values and not named explicitly in your code. (JavaScript, Python, Ruby, PHP)
+- In statically typed languages, you explicitly assign types to variables, functions parameters, return values, etc. (Java, C, C++, Rust, Go)
 
 ### What is Wrong with JavaScript
 
@@ -36,6 +49,15 @@
 - Compiles to JavaScript - runs everywhere
 - Familiar Object-Oriented Programming
 - New JavaScript features work everywhere
+
+### Compiling TypeScript
+
+- TypeScrip uses .ts and .tsx extensions
+- TSC (TypeScrip Compiler) is used to compile .ts files down to JS
+- Can watch files and report errors at compile time
+- Many tools include TS compilation by default
+- Most IDEs have great support for TS
+- The tsconfig.json file is used to configure how TypeScrip works
 
 ### Requirement
 
