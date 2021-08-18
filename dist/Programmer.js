@@ -4,6 +4,9 @@ class Coders {
         this.age = age;
         this.country = country;
     }
+    getProperty() {
+        return this.name;
+    }
     code() {
         console.log(`${this.name} from ${this.country} is Programmer!`);
     }

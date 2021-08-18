@@ -2,10 +2,14 @@ import { isProgrammer } from './isProgrammer';
 
 class Coders implements isProgrammer {
   constructor(
-    public name: string,
+    private name: string,
     public age: number,
     readonly country: string
   ) {}
+
+  getProperty() {
+    return this.name;
+  }
 
   code() {
     console.log(`${this.name} from ${this.country} is Programmer!`);
